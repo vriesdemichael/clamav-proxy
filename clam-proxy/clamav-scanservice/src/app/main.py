@@ -17,7 +17,7 @@ import aiohttp
 
 # https://files.pythonhosted.org/packages/59/2f/2c24c065dd6002afd5e1814f872100f33dfd65dd05e826ab83efe1661b6a/pulp-file-1.10.1.tar.gz
 # packages/59/2f/2c24c065dd6002afd5e1814f872100f33dfd65dd05e826ab83efe1661b6a/pulp-file-1.10.1.tar.gz
-
+# TODO GET THIS FROM PROXY HEADER
 prefix = "https://files.pythonhosted.org/"
 
 logging.basicConfig(level=logging.INFO)

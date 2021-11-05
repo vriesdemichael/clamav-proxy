@@ -1,0 +1,6 @@
+fastapi~=0.70.0
+uvicorn[standard]~=0.15.0
+
+aioredis~=2.0.0
+aiofile~=3.7.2
+aiohttp[speedups]~=3.8.0

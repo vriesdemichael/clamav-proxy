@@ -1,0 +1,16 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  clamd:
+    image: clamav/clamav:0.104
+    ports:
+      - "3310:3310"  # clamd
+  redis:
+    image: redis:6.2.6-bullseye
+
+  clam-scanservice:
+    build: clam-scanservice
+    ports:
+      - "80:80"
+    links:
+      - clamd
+      - redis

@@ -16,6 +16,7 @@ RUN pip install --no-cache-dir --upgrade -r /opt/src/requirements.txt
 
 COPY src /opt/src/
 
+EXPOSE 80
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "80"]
 
 # If running behind a proxy like Nginx or Traefik add --proxy-headers

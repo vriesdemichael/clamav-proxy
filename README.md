@@ -21,4 +21,4 @@ The service uses a python web server for incoming requests. It will then:
    - If no virus was found serve the downloaded file
    - If a virus was found abort the request with a http status code 409 (conflicted resource)
 
-![](docs/architecure.png "underlying architecture")
+<img alt="img" src="./docs/architecture.png" title="underlying architecture"/>
